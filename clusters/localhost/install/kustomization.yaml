@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
   - ../../../apps/xhettes-ambulance-ufe
+  - ../../../apps/xhettes-ambulance-webapi
 
 components:
   - ../../../components/version-developers
+  - https://github.com/Kesuera/ambulance-webapi//deployments/kustomize/components/mongodb
+
+patches:
+  - path: patches/ambulance-webapi.service.yaml
